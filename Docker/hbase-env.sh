@@ -23,7 +23,7 @@
 # ARM64/aarch64: /usr/lib/jvm/java-8-openjdk-arm64
 # X84_64: /usr/lib/jvm/java-1.8.0-openjdk-amd64
 
-if [ "$(uname -m)" = "x86_64" ]; then export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64; else export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64; fi
+if [ "$(uname -m)" = "x86_64" ]; then export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64; else export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64; fi
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HBASE_CLASSPATH=
@@ -35,7 +35,7 @@ if [ "$(uname -m)" = "x86_64" ]; then export JAVA_HOME=/usr/lib/jvm/java-1.8.0-o
 # Below are what we set by default.  May only work with SUN JVM.
 # For more on why as well as other possible settings,
 # see http://wiki.apache.org/hadoop/PerformanceTuning
-export HBASE_OPTS="$HBASE_OPTS -ea -XX:+HeapDumpOnOutOfMemoryError -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode"
+export HBASE_OPTS="$HBASE_OPTS -ea -XX:+HeapDumpOnOutOfMemoryError"
 
 # Uncomment below to enable java garbage collection logging.
 # export HBASE_OPTS="$HBASE_OPTS -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:$HBASE_HOME/logs/gc-hbase.log" 
