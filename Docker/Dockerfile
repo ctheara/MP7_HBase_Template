@@ -1,4 +1,5 @@
 # Fetch ubuntu 18.04 LTS docker image
+# refrained from upgrading to Ubuntu 22.04.2 LTS since the current version of HappyBase (1.2.0) is compatible only with Python 3.7 or earlier.
 FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND noninteractive
 
