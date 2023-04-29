@@ -2,15 +2,12 @@ import happybase as hb
 
 # DON'T CHANGE THE PRINT FORMAT, WHICH IS THE OUTPUT
 # OR YOU WON'T RECEIVE POINTS FROM THE GRADER
+                                                                                     
+row = ???
+for ???, ??? in row.items():
 
-color = ???
-name = ???
-power = ???
-
-color1 = ???
-name1 = ???
-power1 = ???
-
-print('{}, {}, {}, {}, {}'.format(name, power, name1, power1, color))
+    cells = ???
+    for ???, ??? in cells:
+        print("row: {}, column family:qualifier: {}, value: {}, timestamp: {}".format(???, ???, ???, ???))
 
 

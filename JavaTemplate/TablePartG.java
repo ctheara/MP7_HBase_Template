@@ -2,11 +2,10 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 
-import org.apache.hadoop.hbase.Cell;
-import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
+
 import org.apache.hadoop.hbase.TableName;
 
 import org.apache.hadoop.hbase.client.Admin;
@@ -22,7 +21,7 @@ import org.apache.hadoop.hbase.client.TableDescriptor;
 
 import org.apache.hadoop.hbase.util.Bytes;
 
-public class TablePartF{
+public class TablePartG{
 
    public static void main(String[] args) throws IOException {
 
@@ -30,20 +29,15 @@ public class TablePartF{
 	// DON' CHANGE THE 'System.out.println(xxx)' OUTPUT PART
 	// OR YOU WON'T RECEIVE POINTS FROM THE GRADER      
 
-	for (Cell cell : ???) {
-		byte[] family = = ???;
-		byte[] qualifier = = ???;
-		byte[] value = = ???;
-		long timestamp = = ???;
+	
+	String name = ???;
+	String power = ???;
+	String color = ???;
 
-		System.out.println(
-			"row: " + ??? +
-			", family: " + ??? +
-			", qualifier: " + ??? +
-			", value: " + ??? +
-			", timestamp: " + timestamp
-		);
-	}
+	String name1 = ???;
+	String power1 = ???;
+	String color1 = ???;
+	System.out.println(name + ", " + power + ", " + name1 + ", " + power1 + ", "+color);
 
    }
 }
